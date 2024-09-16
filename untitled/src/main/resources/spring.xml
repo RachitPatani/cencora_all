@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="orders2" class="sample.autowire.model.Order">
+        <property name="orderId" value="7869">
+        </property>
+        <property name="orderDetails" value="The product is long lasting">
+        </property>
+        <property name="qty" value="3"> </property>
+    </bean>
+    <bean id="customer" class="sample.autowire.model.Customer" autowire="byName">
+        <property name="custId" value="4001">
+        </property>
+        <property name="custName" value="Vidya Suthar">
+        </property>
+        <!--
+        We will comment this line by adding autowire=byName<property name="orders" ref="orders">
+        </property>-->
+    </bean>
+
+
+
+</beans>
+ 

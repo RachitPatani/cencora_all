@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="helloid" class="com.pack.hello.Hellogreet" >-->
+<!--        <property name="msg" value="hello lol"/>-->
+<!--        <bean id ="constructerid" class="com.pack.hello.Hellogreet">-->
+<!--              <constructor-arg index="0" value="101"/>-->
+<!--        <constructor-arg index="1" value="rachit"/>-->
+<!--        </bean>-->
+<!--            <bean id="cont" class="com.pack.hello.Hellogreet">-->
+<!--            <constructor-arg index="0" value="3213"/>-->
+<!--            </bean>-->
+<!--    <bean id="st" class="com.pack.hello.Hellogreet">-->
+<!--        <constructor-arg index="0" value="758x"/>-->
+    <bean id ="student" class="com.pack.hello.Student">
+
+        <property name="st_id">
+            <value>1</value>
+        </property>
+        <property name="st_name">
+            <value>rachit</value>
+        </property>
+        <property name="st_course">
+            <value>it</value>
+        </property>
+
+
+
+
+
+    </bean>
+</beans>

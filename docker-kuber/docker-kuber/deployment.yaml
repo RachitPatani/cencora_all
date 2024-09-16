@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: docker-kuber
+
+spec:
+
+  replicas: 2
+
+  selector:
+
+    matchLabels:
+
+      app: docker-kuber
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: docker-kuber
+
+    spec:
+
+      containers:
+
+        - name: docker-kuber
+
+          image: f9d5081bf7d5/docker-kuber
+
+          ports:
+
+            - containerPort: 8080
+
